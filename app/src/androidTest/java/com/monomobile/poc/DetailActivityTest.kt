@@ -1,6 +1,5 @@
 package com.monomobile.poc
 
-
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
@@ -25,7 +24,6 @@ import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
-
 
 @LargeTest
 @RunWith(AndroidJUnit4::class)

@@ -2,8 +2,7 @@ package com.monomobile.poc
 
 import com.monomobile.poc.api.*
 import com.monomobile.poc.model.ArtistItem
-import io.reactivex.Observable
-import io.reactivex.observers.TestObserver
+import com.nhaarman.mockitokotlin2.mock
 import kotlinx.coroutines.runBlocking
 import org.junit.Before
 import org.junit.Test
@@ -27,7 +26,7 @@ class ApiRepositoryTest {
 
     @Before
     fun setUp() {
-        apiService = mock(ApiService::class.java)
+        apiService = mock()
 
         repository = ApiRepository(
             apiService,
@@ -46,7 +45,7 @@ class ApiRepositoryTest {
     @Test
     fun `test search for error is returned on http HttpException`() {
         runBlocking {
-            val mockException: HttpException = mock(HttpException::class.java)
+            val mockException: HttpException = mock()
             `when`(mockException.code()).thenReturn(401)
             `when`(apiService.search()).thenThrow(mockException)
 

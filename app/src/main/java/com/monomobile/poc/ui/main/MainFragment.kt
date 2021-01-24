@@ -15,14 +15,12 @@ import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.monomobile.poc.R
 import com.monomobile.poc.adapter.ItemsAdapter
-import com.monomobile.poc.api.Resource
 import com.monomobile.poc.api.Status
 import com.monomobile.poc.model.ArtistItem
 import com.monomobile.poc.ui.detail.DetailActivity
 import kotlinx.android.synthetic.main.activity_detail.*
 import kotlinx.android.synthetic.main.main_fragment.*
 import org.koin.androidx.viewmodel.ext.android.sharedViewModel
-import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class MainFragment : Fragment() {
 
