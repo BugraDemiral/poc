@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+
+        <variable
+            name="result"
+            type="com.monomobile.poc.model.ArtistItem"
+            />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/itemTitle"
+            style="?attr/textAppearanceSearchResultTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="4dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/itemImage"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Item Title" />
+
+        <TextView
+            android:id="@+id/itemDetail"
+            style="?attr/textAppearanceSearchResultSubtitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintStart_toEndOf="@+id/itemImage"
+            app:layout_constraintTop_toBottomOf="@+id/itemTitle"
+            tools:text="Item Detail"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/itemImage"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars[0]"
+            android:contentDescription="@string/content_desc"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

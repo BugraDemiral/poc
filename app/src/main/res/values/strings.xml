@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">GAN</string>
+    <string name="content_desc">Image</string>
+    <string name="menu_refresh">Refresh</string>
+    <string name="title_activity_detail">DetailActivity</string>
+    <string name="filter_text">Filter</string>
+    <string name="filter_header">Appearance</string>
+    <string name="filter_reset">Reset</string>
+    <string name="filter_result">Show results</string>
+    <string name="request_error">Unable to retrieve Items! Please check your connection.</string>
+
+</resources>
