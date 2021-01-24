@@ -1,2 +1,1 @@
-# poc
-# poc
+Please check readme.txt for further details
