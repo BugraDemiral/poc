@@ -67,7 +67,7 @@ class MainViewModelTest {
     }
 
     @Test
-    fun `when getWeather is called with invalid location, then observer is updated with failure`() = runBlocking {
+    fun `when getSearchResults is called with error, then observer is updated with failure`() = runBlocking {
         whenever(apiRepository.getSearchResults()).thenReturn(errorResource)
         viewModel.artists.observeForever(apiObserver)
         viewModel.getSearchResults()
