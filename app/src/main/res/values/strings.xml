@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">GAN</string>
+    <string name="app_name">POC</string>
     <string name="content_desc">Image</string>
     <string name="menu_refresh">Refresh</string>
     <string name="title_activity_detail">DetailActivity</string>
